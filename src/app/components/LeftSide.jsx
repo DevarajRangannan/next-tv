@@ -41,6 +41,15 @@ export default function LeftSide(){
           if((index + 1)%3 != 0){
             leftSideDivElements[index+1].focus()
           }
+          else{
+            if(window.testLastElementsStack){
+              window.testLastElementsStack.focus()
+            }
+            else{
+              document.getElementById("rightSideContainer").querySelector(".rightSide").focus()
+            }
+            window.testLastElementsStack = leftSideDivElements[index]
+          }
         }
         else if(e.keyCode == 40){
           if((index + 3) < 9){

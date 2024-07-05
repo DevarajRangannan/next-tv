@@ -1,0 +1,18 @@
+.rightSideContainer{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    gap: 1rem; 
+  }
+  
+  .rightSideContainer .rightSide{
+    background-color: red;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    border-radius: .5rem;
+  }
+  
+  .rightSide:focus{
+    background-color: blue;
+  }
