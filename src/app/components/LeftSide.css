@@ -16,3 +16,7 @@
 .leftSideDiv:focus{
   background-color: blue;
 }
+
+.leftSideDiv.lastFocus{
+  background-color: #5c5c5c;
+}

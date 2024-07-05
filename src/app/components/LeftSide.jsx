@@ -49,6 +49,7 @@ export default function LeftSide(){
               document.getElementById("rightSideContainer").querySelector(".rightSide").focus()
             }
             window.testLastElementsStack = leftSideDivElements[index]
+            leftSideDivElements[index].classList.add("lastFocus")
           }
         }
         else if(e.keyCode == 40){

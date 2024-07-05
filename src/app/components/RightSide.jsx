@@ -36,6 +36,7 @@ export default function RightSide(){
             else{
               document.getElementById("leftSideContainer").querySelector(".leftSideDiv").focus()
             }
+            window.testLastElementsStack.classList.remove("lastFocus")
             window.testLastElementsStack = rightSideDivElements[index]
           }
         }
