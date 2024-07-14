@@ -1,11 +1,13 @@
-import LeftSide from "./components/LeftSide";
-import RightSide from "./components/RightSide";
+import Rail from "./components/Rail";
+import SideNavBar from "./components/SideNavBar";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-2">
-      {<LeftSide/>}
-      {<RightSide/>}
+    <main className="flex">
+      {<SideNavBar/>}
+      <div className="overflow-hidden w-[95vw]">
+        {<Rail/>}
+      </div>
     </main>
   );
 }
